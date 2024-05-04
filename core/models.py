@@ -1,9 +1,9 @@
 from django.db import models
 
 class User(models.Model):
-    name = models.CharField(max_length=30, blank=False)
+    name = models.CharField(max_length=30)
     second_name = models.CharField(max_length=50, blank=True)
-    nickname = models.CharField(max_length=20, blank=False)
+    nickname = models.CharField(max_length=20)
 
     class Meta:
         verbose_name = 'Пользователь'
